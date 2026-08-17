@@ -1,0 +1,68 @@
+---
+title: "Deploy Your App and Connect a Custom Domain"
+sidebarTitle: "Deploy & Domains"
+description: "Deploy any AIWA project to a live URL in one click, then connect your own custom domain. AIWA manages SSL, CDN, and the build pipeline automatically."
+---
+
+Every AIWA project can be deployed to a live, publicly accessible URL with one click. You can use a free `*.aiwacodes.com` subdomain or connect your own custom domain — AIWA handles SSL certificates, CDN distribution, and the build pipeline automatically so you can focus on building, not infrastructure.
+
+## Free Subdomain Deployment
+
+Every AIWA account — including the free Launchpad plan — gets access to unlimited `*.aiwacodes.com` subdomains. Your project URL goes live immediately after you click **Deploy**; there is no waiting for a build queue or a separate hosting step.
+
+- **All plans** (including free Launchpad) include unlimited `*.aiwacodes.com` subdomains
+- Your project URL is live the moment you click **Deploy**
+- Example URL: `your-project.aiwacodes.com`
+- Version history and one-click restore are available on all plans
+
+## Connecting a Custom Domain
+
+<Steps>
+  <Step title="Open your project in the AIWA editor">
+    Navigate to the project you want to connect a custom domain to.
+  </Step>
+  <Step title="Navigate to Project Hub → Domains">
+    Click the **Project Hub** icon in the sidebar, then select the **Domains** tab.
+  </Step>
+  <Step title="Click Add Domain and enter your domain">
+    Click **Add Domain** and type your domain name — for example, `myapp.com`.
+  </Step>
+  <Step title="Copy the DNS records AIWA displays">
+    AIWA will show you the DNS records you need to add at your domain registrar. This is typically a `CNAME` record or an `A` record pointing to AIWA's servers.
+  </Step>
+  <Step title="Add the DNS records at your registrar">
+    Log in to your domain registrar (such as Namecheap, GoDaddy, or Cloudflare) and add the records exactly as shown. DNS changes usually propagate within 24 hours, though they often take effect much sooner.
+  </Step>
+  <Step title="Wait for SSL to be provisioned">
+    Once DNS propagates, AIWA automatically provisions an SSL certificate for your domain via Let's Encrypt. No action is required on your part.
+  </Step>
+  <Step title="Your site is live on your custom domain">
+    Your project is now accessible at your custom domain over HTTPS. Visitors will see a padlock in their browser — SSL is active and managed for you.
+  </Step>
+</Steps>
+
+<Note>
+  Custom domains are available on the Solo, Agency, and Enterprise plans. Upgrade your plan in **Workspace Settings → Billing** to unlock this feature.
+</Note>
+
+## Deployment Settings
+
+AIWA manages every layer of the deployment stack for you. You do not need to configure servers, write deployment scripts, or set up a CDN.
+
+| Setting | How AIWA handles it |
+|---|---|
+| **Build pipeline** | All build steps run automatically — no configuration needed |
+| **CDN** | Every deployed project is served from a global CDN for fast load times worldwide |
+| **SSL / TLS** | Free certificates are automatically provisioned via Let's Encrypt and renewed before they expire |
+| **Preview URLs** | Every build gets a unique preview URL you can share before publishing to your live domain |
+
+## Redeploying and Rollbacks
+
+Every change you make in the AIWA editor creates a new version in your project's version history. You are never locked into a single snapshot of your app.
+
+- **To redeploy:** click **Deploy** in the editor. The latest version of your project goes live immediately.
+- **To restore a previous version:** open **Version History** from the editor sidebar, select the version you want to restore, and click **Restore**. AIWA redeploys that version to your live URL.
+
+<Tip>
+  Use preview URLs to share a build with clients or teammates for review before publishing it to your live domain. Preview links are unlisted — only people you share the URL with can access them.
+</Tip>

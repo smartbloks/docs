@@ -1,0 +1,76 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "AIWA",
+  "theme": "luma",
+  "favicon": "https://media.brand.dev/91ad388c-e183-43bb-abb2-65ac3eb4acb2.png",
+  "colors": {
+    "primary": "#c9371e",
+    "light": "#c9371e",
+    "dark": "#fbbe6c"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Start Building Free",
+      "href": "https://app.aiwa.codes"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "how-it-works"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/project-brain",
+              "concepts/ai-agents",
+              "concepts/credits"
+            ]
+          },
+          {
+            "group": "Building",
+            "pages": [
+              "building/website-builder",
+              "building/app-builder",
+              "building/saas-builder",
+              "building/crm-builder"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "platform/deploy-domains",
+              "platform/mobile-export",
+              "platform/integrations",
+              "platform/team-collaboration"
+            ]
+          },
+          {
+            "group": "Plans & Billing",
+            "pages": [
+              "billing/plans",
+              "billing/credits",
+              "billing/founding-agency"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

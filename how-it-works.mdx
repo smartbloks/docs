@@ -1,0 +1,123 @@
+---
+title: "How AIWA Works: The Agentic Product Lifecycle"
+sidebarTitle: "How It Works"
+description: "Discover how AIWA's five-stage agentic workflow — Plan, Architect, Build, Test, Evolve — turns a prompt into a live, continuously improving product."
+---
+
+AIWA is not a one-shot code generator. Where other AI builders produce a snapshot of your app and leave you to manage everything that comes next, AIWA runs your entire product lifecycle — from the first description of your idea through to an AI-monitored, continuously improving live product. A coordinated team of specialized AI agents handles planning, architecture, construction, quality assurance, and post-launch evolution, working together the way a real product team would.
+
+## The Five-Stage Workflow
+
+Every project in AIWA moves through five distinct stages. Each stage feeds the next, so the decisions made at the start of your project remain consistent all the way through deployment and beyond.
+
+### 1. Plan
+
+Your **AI Product Manager** takes your plain English description and works through the full scope of your product before any code is written. It defines:
+
+- User goals and jobs to be done
+- Core features and their priority
+- User flows and navigation paths
+- Data requirements and access rules
+- Integration dependencies
+
+This planning stage is what separates AIWA from a prompt-to-code shortcut. When requirements are clear before building begins, the generated code is coherent, purposeful, and far less likely to need major rework.
+
+### 2. Architect
+
+Once the scope is defined, AIWA moves into architecture. At this stage, the AI designs:
+
+- **Database schema** — tables, relationships, indexes, and row-level security rules
+- **API structure** — endpoints, authentication patterns, and data contracts
+- **Component hierarchy** — how your frontend is organized and how components share state
+- **Integration requirements** — what third-party services (Stripe, Resend, Cloudinary, etc.) need to connect and how
+
+The architecture is stored in your project's persistent context so that every subsequent build — whether you're adding a feature today or six months from now — stays consistent with the foundation that was laid.
+
+### 3. Build
+
+With a plan and architecture in place, AIWA's multi-model code generation engine produces your complete, full-stack application. This means:
+
+- A real **frontend** with full component trees, routing, and responsive layouts
+- A real **backend** with API routes, business logic, and authentication
+- A provisioned **Postgres database**, configured automatically — no connection strings, no manual table creation
+- Any **integrations** you requested, wired in and ready to use
+
+You can choose which AI model drives the build based on the complexity of your project and your speed requirements:
+
+| Model | Best For |
+|---|---|
+| **Claude Opus** | Complex logic, nuanced data models, multi-role auth |
+| **Claude Sonnet** | Fast iterations, UI-heavy builds, quick feature additions |
+| **GPT-4o** | Alternative generation style; strong at structured reasoning |
+| **Gemini 2.5 Pro** | Large context tasks; useful for expansive codebases |
+
+Credits consumed per build adjust based on the model you select and the complexity of what's being generated. You can switch models between builds at any time.
+
+### 4. Test
+
+Before your app ever reaches a live URL, your **AI Testing Agent** validates it in a real browser environment. It checks:
+
+- **Layout integrity** — does the UI render as expected across screen sizes?
+- **Mobile responsiveness** — does the layout hold on small viewports?
+- **Authentication flows** — do sign-up, login, and protected routes work correctly?
+- **Logic errors** — are form submissions, data writes, and state transitions behaving as intended?
+
+Issues caught at this stage are surfaced to you with context, so you can either ask AIWA to fix them automatically or review them yourself before deploying.
+
+### 5. Evolve
+
+Deployment is not the end of AIWA's involvement — it's the beginning of a new phase. After your app goes live, a set of post-launch AI agents takes over:
+
+- **SEO Agent** — monitors search rankings continuously, identifies drops, and proposes fixes to meta tags, content, schema markup, and internal linking. You approve; AIWA ships.
+- **CRO Agent** — watches how real users move through your product. When conversion dips or friction appears in an onboarding flow, the CRO Agent flags the issue and proposes a targeted change.
+- **Revenue Agent** — tracks MRR signals for SaaS products: churn risk, upgrade opportunities, and revenue anomalies. Delivers a weekly brief with context and suggested actions.
+
+You stay in control. Agents surface insights and recommendations; you decide what gets implemented.
+
+---
+
+## From Prompt to Live Product
+
+The experience from your perspective is intentionally simple:
+
+1. **Describe** your idea in plain English — no wireframes, no specifications
+2. **Review** the AI Product Manager's architecture plan and refine it if needed
+3. **Generate** your full-stack app and preview it in the editor
+4. **Deploy** to a live URL in one click
+5. **Let agents take over** — SEO, CRO, and Revenue agents begin monitoring and improving your product from day one
+
+Each step is a conversation. You're not configuring settings or filling out forms — you're talking to a product team that happens to work at machine speed.
+
+---
+
+## Why Persistent Context Matters
+
+Most AI builders have no memory. Every time you return to make a change, they're starting from scratch — and that means every edit risks rewriting parts of your app that were already working.
+
+AIWA's **Project Brain™** eliminates this problem. Project Brain is a persistent memory layer that stores:
+
+- Every architectural decision and the reasoning behind it
+- The full data model and how it has evolved
+- Component relationships and state dependencies
+- Version history with the ability to restore any previous state
+
+Because AIWA remembers everything, edits are targeted. When you add a new feature, the AI understands the existing structure and integrates the change without touching what doesn't need to change. You can walk away from a project for months, come back with a new requirement, and pick up exactly where you left off — safely.
+
+---
+
+## Multi-Model AI Engine
+
+AIWA is not locked to a single AI model. You choose the model for each build based on what the task demands:
+
+- **Claude Opus** — best for projects with complex business logic, intricate data models, or multi-role permission systems where careful reasoning matters more than raw speed
+- **Claude Sonnet** — best for rapid iteration cycles, UI-heavy builds, and quick feature additions where you want fast turnaround
+- **GPT-4o** — a strong alternative with structured reasoning capabilities; useful when you want a different generation perspective on the same problem
+- **Gemini 2.5 Pro** — excels at large-context tasks and is particularly effective when working with expansive codebases that require broad awareness of the full file tree
+
+Credits consumed per generation adjust based on the model selected and the complexity of the build. Simpler changes on lighter models cost fewer credits; complex full-app generations on Opus cost more. You can switch models between any two builds without losing your project context.
+
+---
+
+<Tip>
+  Want to understand exactly what each AI agent does after your app goes live? Read the full breakdown on the [AI Agents](/concepts/ai-agents) page, including how the SEO, CRO, Revenue, and Testing agents work and how to review their recommendations.
+</Tip>

@@ -1,0 +1,66 @@
+---
+title: "Understanding AIWA Credits: How Usage Is Measured"
+sidebarTitle: "Credits"
+description: "Credits are AIWA's usage currency. Learn how credits are consumed per build, how model choice affects cost, and how to manage your monthly allowance."
+---
+
+Credits are the unit of usage in AIWA. Every time you generate a project, build a new feature, or trigger a significant update, AIWA draws from your monthly credit balance to power the AI work behind the scenes. Credit usage scales with two things: the complexity of what you're building, and the AI model you choose. Larger, more intricate applications cost more credits to generate than simple ones, and more capable models — the ones that reason harder and produce more sophisticated output — carry a higher credit cost than their faster counterparts.
+
+## What Consumes Credits
+
+Not everything you do in AIWA draws from your credits. Here is what does and what doesn't:
+
+**Actions that consume credits:**
+- Generating or regenerating a project from a prompt
+- Adding major new features to an existing application
+- Running the AI Testing Agent on a build
+- Making significant architectural changes to your app
+- Mobile export — generating a signed APK (Android) or IPA (iOS) for app store submission
+
+**Actions that do not consume credits:**
+- Browsing your project dashboard
+- Viewing live previews of your application
+- Reading your version history
+- Reviewing agent briefs and suggestions before approving them
+
+## Model Credit Costs
+
+You choose which AI model powers each build. Different models carry different credit costs based on their capability and compute requirements.
+
+| Model | Best For | Relative Credit Cost |
+|---|---|---|
+| Claude Sonnet | Fast iterations, UI changes | Standard |
+| Claude Opus | Complex logic, architecture | Higher |
+| GPT-4o | Alternative general use | Standard |
+| Gemini 2.5 Pro | Large context, complex apps | Higher |
+
+When in doubt, start with Claude Sonnet for speed and switch to Claude Opus or Gemini 2.5 Pro when you need deeper reasoning on a complex data model or tricky backend logic.
+
+## Credit Allowances by Plan
+
+Your monthly credit balance depends on your plan. Unused credits reset at the start of each billing period and do not roll over to the following month.
+
+| Plan | Monthly Credits | Approx. Full Apps |
+|---|---|---|
+| Launchpad (Free) | 45 | 1 small app |
+| Solo ($25.99/mo annual) | 130 | ~2 full apps |
+| Agency ($149.99/mo annual) | 790 | ~15 full apps |
+| Enterprise | Custom | Volume |
+
+The "approx. full apps" figure assumes mid-complexity applications built with Claude Sonnet. Larger apps, complex SaaS products, or builds using higher-cost models will consume more credits per project.
+
+## Managing Your Credits
+
+You can check your remaining credit balance at any time from the dashboard — look for the credit indicator in the top navigation or your account settings. When your balance runs low, you'll see a warning before you trigger any credit-consuming action.
+
+A few things worth knowing:
+
+- **Unused credits do not roll over.** Your balance resets at the start of each billing cycle.
+- **Upgrades are prorated automatically.** If you upgrade mid-cycle, Stripe calculates the difference and applies a credit to your next invoice — you only pay for what you use.
+- **Enterprise plans carry custom volume.** If you're building at scale or need predictable credit volumes for client work, [contact the AIWA team](https://app.aiwa.codes/enterprise) to discuss a custom arrangement.
+
+<Tip>
+  Start with the Launchpad free plan — 45 credits every month, no credit card required. It's enough to build and publish your first small app and get a feel for how AIWA works before committing to a paid plan.
+</Tip>
+
+Ready to compare plans in full? See the [Billing & Plans](/billing/plans) page for a complete feature breakdown across all tiers.

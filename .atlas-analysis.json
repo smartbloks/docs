@@ -1,0 +1,100 @@
+{
+  "projectType": "saas",
+  "projectName": "AIWA",
+  "projectDescription": "AIWA is an AI product team platform that plans, builds, deploys, and continuously evolves websites, SaaS apps, CRMs, and full-stack applications from plain English descriptions.",
+  "theme": "luma",
+  "primaryColor": "#090706",
+  "lightColor": "#c9371e",
+  "darkColor": "#fbbe6c",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "how-it-works"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/project-brain",
+              "concepts/ai-agents",
+              "concepts/credits"
+            ]
+          },
+          {
+            "group": "Building",
+            "pages": [
+              "building/website-builder",
+              "building/app-builder",
+              "building/saas-builder",
+              "building/crm-builder"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "platform/deploy-domains",
+              "platform/mobile-export",
+              "platform/integrations",
+              "platform/team-collaboration"
+            ]
+          },
+          {
+            "group": "Plans & Billing",
+            "pages": [
+              "billing/plans",
+              "billing/credits",
+              "billing/founding-agency"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Agentic workflow engine: Plan → Architect → Build → Test → Evolve",
+    "Project Brain™ — persistent AI memory across the full product lifecycle",
+    "Full-stack generation (frontend, backend, database, auth) from a prompt",
+    "One-click deploy to live URL with custom domain, SSL, and CDN",
+    "Mobile app export — signed APK (Android) and IPA (iOS) from a web app",
+    "Invisible managed Postgres backend with auth and storage, zero config",
+    "Built-in integrations: Stripe, Resend, Cloudinary, Google, GitHub, Twilio",
+    "AI SEO Agent — continuous ranking monitoring and automated fixes",
+    "AI CRO Agent — conversion monitoring and onboarding optimization",
+    "AI Revenue Agent — MRR signals, churn risk, and upgrade opportunities",
+    "AI Testing Agent — automated browser testing before every deployment",
+    "Multi-model AI engine: Claude Opus/Sonnet, GPT-4o, Gemini 2.5 Pro",
+    "Team collaboration with role-based access and client review portals",
+    "Code export and GitHub sync"
+  ],
+  "publicApiSurface": [
+    "app.aiwa.codes — primary builder interface",
+    "Custom domain connection via Project Hub",
+    "One-click deployment pipeline",
+    "GitHub sync / code export",
+    "Stripe subscription billing integration",
+    "Resend email integration",
+    "Cloudinary media integration",
+    "Twilio integration",
+    "Android APK export",
+    "iOS IPA export",
+    "AIWA Mini model",
+    "Instant Postgres provisioning",
+    "Speech-to-prompt input",
+    "Debug Mode",
+    "Version history and restore"
+  ]
+}

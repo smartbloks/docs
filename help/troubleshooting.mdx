@@ -1,0 +1,122 @@
+---
+title: "Troubleshooting Common Issues in AIWA"
+sidebarTitle: "Troubleshooting"
+description: "Resolve the most common issues in AIWA — from deployment errors and domain setup to build failures, credit questions, and mobile export problems."
+---
+
+This guide covers the most common issues you might encounter while building with AIWA, along with step-by-step solutions. For issues not covered here, contact the team at [hello@aiwa.codes](mailto:hello@aiwa.codes) or join the community on [WhatsApp](https://chat.whatsapp.com/KL6AucmDI7v8gjuKjhW58e).
+
+## Build & Generation Issues
+
+<Accordion title="Build fails or gets stuck">
+  If a build fails or appears frozen, work through these steps in order:
+
+  <Steps>
+    <Step title="Refresh and reopen">
+      Refresh the page and reopen your project. Transient connection issues can stall a build without an underlying code problem.
+    </Step>
+    <Step title="Ask AIWA to fix errors">
+      In the chat, type: **"Fix any errors in the current build."** AIWA will diagnose the issue with full context of your project and attempt a repair.
+    </Step>
+    <Step title="Use Debug Mode">
+      Open Project Hub → Debug to run AIWA's AI debugger. Debug Mode gives the AI full codebase context to identify and resolve the root cause.
+    </Step>
+    <Step title="Restore a previous version">
+      If the build continues to fail, open Version History and restore the last known working version. Then re-apply your changes incrementally.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="Generated code looks incomplete">
+  AIWA generates complete file trees, but complex apps sometimes need follow-up prompts to fill in every detail. To get the result you need:
+
+  - Add specificity to your description — name the missing pages, features, or interactions explicitly
+  - Reference what AIWA has already built: "Add a notifications page to the existing app"
+  - AIWA's Project Brain™ retains context of everything built so far, so follow-up prompts build on — rather than replace — existing work
+</Accordion>
+
+<Accordion title="A feature I added broke something else">
+  Feature conflicts can occur when a new addition touches shared components or data models. To recover:
+
+  1. Type **"Undo the last change"** in the chat to revert the most recent generation
+  2. Alternatively, open Version History and restore a previous stable version
+  3. If you want to keep the feature, describe it again with more detail about how it should coexist with the existing architecture
+
+  AIWA's Project Brain™ significantly reduces this risk by planning new features against the current architecture before generating any code. Always preview changes in the live preview before deploying to production.
+</Accordion>
+
+## Deployment & Domain Issues
+
+<Accordion title="My custom domain isn't resolving">
+  DNS propagation can take up to 48 hours after you add records. Work through this checklist:
+
+  1. Verify you added the exact DNS records shown in **Project Hub → Domains** — copy them directly from AIWA rather than typing manually
+  2. Check propagation using a public DNS lookup tool to confirm your records are live globally
+  3. Ensure you added either a CNAME **or** an A record — not both — for the same hostname
+  4. If your domain still hasn't resolved after 48 hours, contact [hello@aiwa.codes](mailto:hello@aiwa.codes) with your domain name and account email
+</Accordion>
+
+<Accordion title="SSL certificate not showing">
+  AIWA provisions your SSL certificate automatically once DNS propagates to our servers. If your domain shows as insecure after 24 hours:
+
+  1. Confirm your DNS is pointing correctly to AIWA (see the steps above)
+  2. Go to **Project Hub → Domains** and click **Refresh SSL** to trigger a manual certificate recheck
+  3. If the issue persists, contact [hello@aiwa.codes](mailto:hello@aiwa.codes)
+</Accordion>
+
+<Accordion title="Deploy button is greyed out">
+  A greyed-out Deploy button means your project is currently in the middle of a build or a previous deployment. Wait for the current operation to complete — the button will become active again automatically once AIWA finishes.
+</Accordion>
+
+## Credit & Billing Issues
+
+<Accordion title="I ran out of credits mid-build">
+  Credits are consumed per generation. If your monthly allowance is exhausted, new builds are paused until your credits reset on your billing cycle date. You have two options:
+
+  - **Wait for the reset** — credits refresh automatically on your billing date each month
+  - **Upgrade your plan** — go to Account Settings → Billing at any time to upgrade and get an immediately increased allowance
+
+  See the [Plans page](/billing/plans) for a full comparison of credit allowances across plans.
+</Accordion>
+
+<Accordion title="I was charged the wrong amount">
+  Upgrades are prorated automatically by Stripe, so mid-cycle charges may look different from your full plan price. If you believe a charge is genuinely incorrect, email [hello@aiwa.codes](mailto:hello@aiwa.codes) with:
+
+  - Your account email address
+  - The charge amount and approximate date
+  - A brief description of what you expected to be charged
+
+  The team will investigate and respond promptly.
+</Accordion>
+
+<Accordion title="My credits didn't reset">
+  Credits reset on your **billing cycle date**, not on the 1st of the calendar month. Your billing date is shown in **Account Settings → Billing**. If your credits haven't reset and your billing date has passed, contact [hello@aiwa.codes](mailto:hello@aiwa.codes).
+</Accordion>
+
+## Mobile Export Issues
+
+<Accordion title="APK / IPA export fails">
+  Mobile export generates from the live deployed version of your app. If the export fails:
+
+  1. Confirm your web app builds and deploys successfully — the Deploy button should show a green "Live" status
+  2. Redeploy the latest version of your project, then attempt the export again
+  3. If the export continues to fail after a clean redeploy, contact [hello@aiwa.codes](mailto:hello@aiwa.codes) with your project name and the error message shown
+</Accordion>
+
+<Accordion title="My app was rejected from the App Store">
+  Apple's review process has strict requirements that go beyond the technical export. Common rejection reasons include:
+
+  - **Missing privacy policy URL** — add your privacy policy URL in App Store Connect before submitting
+  - **Insufficient app description** — write a detailed description explaining what your app does and who it is for
+  - **Content policy violations** — review Apple's App Store Review Guidelines and ensure your app complies
+
+  AIWA generates the required app metadata and signing kit, but you are responsible for completing the App Store Connect listing, adding your privacy policy, and ensuring your content meets Apple's policies.
+</Accordion>
+
+## Getting More Help
+
+If the steps above don't resolve your issue, the AIWA team is here to help.
+
+- **Email:** [hello@aiwa.codes](mailto:hello@aiwa.codes)
+- **Community:** [Join the WhatsApp Community](https://chat.whatsapp.com/KL6AucmDI7v8gjuKjhW58e)
+- **Agency & Enterprise customers:** VIP support is available directly through your account — use the VIP support link in your Project Hub

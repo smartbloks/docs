@@ -1,0 +1,69 @@
+---
+title: "AIWA Integrations: Connect Payments, Email, Storage, and More"
+sidebarTitle: "Integrations"
+description: "AIWA has built-in integrations for Stripe, Resend, Cloudinary, Twilio, Google, and GitHub. Tell AIWA what you need and it wires everything up automatically."
+---
+
+AIWA has a set of built-in integrations that can be wired into your project during generation or added at any time. You do not configure API keys manually or set up a separate integration layer — tell AIWA which integrations you need in plain English, and it generates the connection code, configuration, and any required UI components automatically.
+
+## Available Integrations
+
+<CardGroup cols={2}>
+  <Card title="Stripe" icon="credit-card">
+    Accept payments and manage subscriptions. Tell AIWA your pricing model and it generates subscription tiers, trial logic, upgrade flows, and webhook handling — all production-ready.
+  </Card>
+  <Card title="Resend" icon="envelope">
+    Transactional email for welcome messages, password resets, and notifications. AIWA generates the email templates and the sending logic so your app can deliver email from day one.
+  </Card>
+  <Card title="Cloudinary" icon="image">
+    Image and video upload, storage, and transformation. AIWA generates the upload components and the Cloudinary configuration so your users can upload and manage media without any manual setup.
+  </Card>
+  <Card title="Twilio" icon="phone">
+    SMS notifications and phone number verification. AIWA generates the messaging integration and verification flows so you can add SMS to your app without writing any integration code.
+  </Card>
+  <Card title="Google" icon="google">
+    Google OAuth sign-in and Google APIs. AIWA generates the full OAuth flow and any required API calls so your users can sign in with their Google account in one click.
+  </Card>
+  <Card title="GitHub" icon="github">
+    Code export and GitHub sync. Push your AIWA project to a GitHub repository and keep it in sync as you make changes — your code is always yours and always accessible.
+  </Card>
+</CardGroup>
+
+## Adding an Integration
+
+You can add any integration to your project at any time — during the initial build or as a follow-up change. AIWA's AI Product Manager plans the integration architecture before any code is written, so the integration fits your existing codebase cleanly.
+
+<Steps>
+  <Step title="Open your project in the AIWA editor">
+    Navigate to the project you want to add an integration to.
+  </Step>
+  <Step title="Describe the integration you want in the chat prompt">
+    Type what you need in plain English — for example: *"Add Stripe payments with a $29/month subscription tier and a 14-day free trial."* You do not need to reference technical details.
+  </Step>
+  <Step title="AIWA's AI Product Manager plans the integration">
+    Before writing any code, your AI Product Manager maps out how the integration fits into your existing architecture, data model, and user flows.
+  </Step>
+  <Step title="The AI Builder generates the integration">
+    The AI Builder generates the integration code, configuration, and any required UI components — payment forms, email triggers, upload widgets, and so on — connected and ready to use.
+  </Step>
+  <Step title="Test in preview before deploying">
+    Review the integration in your preview environment. Confirm everything works as expected, then click **Deploy** to push the integration to your live app.
+  </Step>
+</Steps>
+
+## GitHub Sync and Code Export
+
+Every AIWA project's source code is yours. You can connect your project to a GitHub repository and keep it in sync, or download a full zip of your source code at any time.
+
+- Connect your AIWA project to a GitHub repository from **Project Hub → Export**
+- Once connected, AIWA can push changes directly to your repo whenever you deploy
+- You can also download a full zip of your source code at any time from Project Hub
+- Code export and GitHub sync are available on the Solo, Agency, and Enterprise plans
+
+<Note>
+  AIWA manages all integration credentials securely within the project environment. You do not need to manually paste API keys into your code or configure environment variables yourself.
+</Note>
+
+<Tip>
+  Describe your integration requirements when you first describe your project. If AIWA knows from the start that you need Stripe payments and Resend email, it will plan your architecture with those integrations in mind — resulting in a cleaner, more coherent implementation than adding them after the fact.
+</Tip>

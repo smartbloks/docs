@@ -1,0 +1,72 @@
+---
+title: "Export Your App as a Native Mobile App (Android & iOS)"
+sidebarTitle: "Mobile Export"
+description: "Turn any AIWA web app into a signed Android APK or iOS IPA with one click. Submit directly to the Google Play Store or Apple App Store."
+---
+
+Every app built with AIWA can be exported as a native mobile app — no React Native, no second codebase, no mobile-specific development required. AIWA generates a signed Android APK for the Google Play Store and an IPA for the Apple App Store directly from your web app, so you ship to web and mobile from one place.
+
+## How Mobile Export Works
+
+AIWA wraps your web app in a native mobile shell that meets app store requirements for both Android and iOS. Because the web app and the mobile app share the same codebase, a change you make in AIWA updates both platforms at once — there is no syncing between separate projects.
+
+- AIWA wraps your web app in a native shell that passes app store review requirements
+- Your web app and mobile app share a single codebase — one change updates both platforms
+- The exported app is signed and ready for submission — you add your developer account credentials during the submission process, not during export
+- All required metadata (bundle ID, version number, permissions manifest) is generated automatically by AIWA
+
+## Exporting for Android
+
+<Steps>
+  <Step title="Open your project in the AIWA editor">
+    Navigate to the project you want to export.
+  </Step>
+  <Step title="Navigate to Project Hub → Mobile">
+    Click the **Project Hub** icon in the sidebar, then select the **Mobile** tab.
+  </Step>
+  <Step title="Click Export Android APK">
+    Click the **Export Android APK** button. AIWA begins generating your signed APK file.
+  </Step>
+  <Step title="Wait for AIWA to generate the APK">
+    AIWA builds and signs your APK. You will be notified when it is ready to download.
+  </Step>
+  <Step title="Download and submit to Google Play">
+    Download the APK file and upload it to the [Google Play Console](https://play.google.com/console) to begin the submission process.
+  </Step>
+</Steps>
+
+## Exporting for iOS
+
+<Steps>
+  <Step title="Open your project in the AIWA editor">
+    Navigate to the project you want to export.
+  </Step>
+  <Step title="Navigate to Project Hub → Mobile">
+    Click the **Project Hub** icon in the sidebar, then select the **Mobile** tab.
+  </Step>
+  <Step title="Click Export iOS IPA">
+    Click the **Export iOS IPA** button. AIWA begins generating your IPA file and submission kit.
+  </Step>
+  <Step title="Wait for AIWA to generate the IPA">
+    AIWA builds the IPA and assembles the submission metadata required by the App Store.
+  </Step>
+  <Step title="Submit to the Apple App Store">
+    Use the IPA file and the accompanying submission kit to upload your app via [App Store Connect](https://appstoreconnect.apple.com).
+  </Step>
+</Steps>
+
+<Note>
+  Mobile export is available on the Solo, Agency, and Enterprise plans. The Agency plan includes both the Android APK and the iOS App Store submission kit. Upgrade your plan in **Workspace Settings → Billing** to unlock mobile export.
+</Note>
+
+## App Store Submission Tips
+
+Both stores have submission requirements beyond the app binary itself. Keep the following in mind before you submit:
+
+- **Prepare your assets first.** Both Google Play and the Apple App Store require an app icon and at least one screenshot before submission. Have these ready before you begin the upload process.
+- **Review the platform policies.** Read [Apple's App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/) and [Google Play's Developer Policy](https://play.google.com/about/developer-content-policy/) to make sure your app meets their requirements.
+- **AIWA handles the technical metadata.** Your bundle ID, version info, permissions manifest, and build configuration are all generated automatically — you do not need to configure these manually.
+
+<Tip>
+  Build and test your app thoroughly on web before exporting for mobile. Once your web app works correctly end-to-end, the mobile export faithfully replicates that experience on both Android and iOS.
+</Tip>
